@@ -6,7 +6,6 @@
   var pi_next_digit_wrapper = document.getElementById('js--pi_next_digit');
   var pi_current_digit_wrapper = document.getElementById('js--pi_current_digit');
   var play_again = document.getElementById('js--play_again');
-  var twitter_share_button = document.getElementsByClassName('twitter-share-button')[0];
   var current_index = 0;
 
   digit_wrapper.innerHTML = '3.';
@@ -20,7 +19,6 @@
         current_index++;
         digit_wrapper.innerHTML = digit_wrapper.innerHTML + char_at;
       } else {
-        twitter_share_button.dataset.text = 'I was able to get ' + current_index + ' digits of Pi correct!';
         pi_next_digit_wrapper.innerHTML = window.Pi.charAt(current_index);
         pi_current_digit_wrapper.innerHTML = current_index;
         modal.style.display = 'block';
