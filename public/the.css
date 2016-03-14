@@ -32,6 +32,11 @@ p {
   text-align: center;
 }
 
+a {
+  color: #ff90a2;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 100vw;
 
